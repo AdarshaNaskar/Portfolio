@@ -48,7 +48,7 @@
       category: 'PYTHON • MYSQL',
       image: '../public/parking_management_system.jpeg',
       description: 'A parking management application developed with Python and MySQL for managing vehicle entry, exit, parking records, and database operations.',
-      githubLink: 'https://github.com/AdarshaNaskar/pythonconnectivitys'
+      githubLink: 'https://github.com/AdarshaNaskar/pythonconnectivity'
     },
     {
       id: 3,
