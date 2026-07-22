@@ -1,0 +1,18 @@
+# Environment variables & secrets
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Dependencies
+node_modules/
+
+# Build & distribution output
+dist/
+build/
+
+# Logs & OS artifacts
+*.log
+.DS_Store
+Thumbs.db
