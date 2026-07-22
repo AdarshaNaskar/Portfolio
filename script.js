@@ -61,25 +61,10 @@
     }
   ]);
 
-  // Safe helper to resolve environment variables without causing browser syntax errors
-  function getEnvVar(key, fallback) {
-    try {
-      if (typeof window !== 'undefined' && window.ENV && window.ENV[key]) {
-        return window.ENV[key];
-      }
-      if (typeof process !== 'undefined' && process.env && process.env[key]) {
-        return process.env[key];
-      }
-    } catch (e) {
-      // Ignore environment lookup exceptions in static browser contexts
-    }
-    return fallback;
-  }
-
   const EMAILJS_CONFIG = Object.freeze({
-    SERVICE_ID: getEnvVar('VITE_EMAILJS_SERVICE_ID', 'service_unmp0wf'),
-    TEMPLATE_ID: getEnvVar('VITE_EMAILJS_TEMPLATE_ID', 'template_bmpjaes'),
-    PUBLIC_KEY: getEnvVar('VITE_EMAILJS_PUBLIC_KEY', 'VzaRDw4SUXZabeG-W')
+    SERVICE_ID: "service_unmp0wf",
+    TEMPLATE_ID: "template_bmpjaes",
+    PUBLIC_KEY: "VzaRDw4SUXZabeG-W"
   });
 
   const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
